@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Olá, meu nome é Thiago</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div id="caixa1" class="caixa1" id="Sobre mim">
+    <div class="containermenu">
+      <div class="logo">
+        <img class="logo" src="madao-logo.jpg">
+      </div>
+      <div class="menu" id="menu">
+        <a class ="linkmenu" href="#caixa1">Sobre mim  </a> 
+        <a class ="linkmenu" href="#caixa2">Minhas habilidades</a>
+        <a class ="linkmenu" href="#caixa3">Fale comigo!</a>
+      </div>
+    </div>
+    
+    <h1 class="nome">Thiago Alves</h1>
+	  <!--<p>Olá sou um desenvolvedor madao e não quero desenvolver. Mas ainda <br> quero ter uma vida sossegada e confortável, em ordem disso, <br> apesar da imensa dor, devo continuar aprendendo e trabalhando. <br>Muito trabalhoso e triste.</p>-->
+    <p id="eutexto">
+        Eu sou um desenvolvedor full-stack começando minha carreira e apaixonado <br> por aprender coisas novas. Além disso, sou uma pessoa fácil de lidar e me <br> encaixo bem em qualquer time. Estou buscando uma boa empresa para <br> trabalhar e gerar um impacto positivo no mundo através da tecnologia :)
+      </p>
+    <img id="eu" src="eu.jpeg" onclick="mudar()">
+  </div>
+	<div id="caixa2" class="caixa2" >
+    <div class="titulohabilidades">
+      <h2>Minhas Habilidades</h2>
+    </div>
+    <div class="container"> 
+      <div class="habilidades">
+        <img class="habilidadesimagens" src="frontend4.png">
+        <h3>Front-end</h3>
+        <p class = "habilidadestexto">Eu programo sites do zero, e levo ideias do papel para o navegador, me preocupando com a entrega final.</p>
+          <h4>Linguagens:</h4>
+          <p class = "habilidadestexto">HTML, CSS, JavaScript</p>
+          <h4>Ferramentas:</h4>
+          <p class = "habilidadestexto">React</p>
+          <p class = "habilidadestexto">Redux</p>
+          <p class = "habilidadestexto">SASS</p>
+      </div>
+      <div class="habilidades">
+         <img class="habilidadesimagens" src="backendapi.jpg">
+        <h3>Back-end</h3>
+        <p class = "habilidadestexto">Densenvolvo sistemas para dar suporte aos produtos web, crio APIs e tenho boa experiência com banco de dados.</p>
+          <h4>Tecnologias:</h4>
+          <p class = "habilidadestexto">Node.js, REST, SQL</p>
+          <h4>Ferramentas:</h4>
+          <p class = "habilidadestexto">Express</p>
+          <p class = "habilidadestexto">Postgress</p>
+          <p class = "habilidadestexto">Sequelize</p>
+      </div>
+    </div>
+  </div>
+	<div id="caixa3" class="caixa3">
+    <h2 class= "titulocontato">Me manda uma mensagem :)</h2>
+    <a class="linkwhatsapp" href="https://api.whatsapp.com/send?phone=5562985933858&text=Ol%C3%A1%2C%20Thiago%2C%20tudo%20bem%3F%20Estou%20entrando%20em%20contato%20pelo%20site." target="_blank">Mandar um WhatsApp</a>
+    
+    <div class="containeroutroscontatos">
+        <p><br><br><br><br>Ou então fale comigo por</p><a class="linkcontatos" href="https://www.facebook.com/Thiago.Alves.ec3790125" target="_blank"><img class="outroscontatos" src="new-facebook-logo.png"></a><a href="https://twitter.com/Th1ag0Alves" target="_blank"class="linkcontatos"><img class="outroscontatos" src="twitter-logo.png"></a><a class="linkcontatos"href="https://www.instagram.com/thiagoalvesec/" target="_blank"><img class="outroscontatos" src="instagram-logo.png"></a>
+    </div>
+    
+  </div>
+
+  <script>
+    function mudar() {
+      var background = document.body.style.background;
+      if(background === '#FFFFFF'){
+        document.body.style.background.color = '#FFFFFF';
+      } 
+      else {
+        document.body.style.background = '#333333';
+        document.body.style.color = "#FFFFFF";
+      }
+      background = "#333333"
+      
+    }
+  </script>
+</body>
+</html>
